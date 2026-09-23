@@ -35,29 +35,16 @@ Both paper sizes are offered by IEEE; this does not establish which size your co
 ## Formatting and submission requirements still unresolved
 
 1. **Official conference instructions:** The general IEEE template guidance has now been checked, as documented above. Please supply the conference name/link or organizer notice. The accepted paper size, page limit, abstract/keyword limits, required copyright wording, funding-note rules, PDF filename/size rules, PDF eXpress conference ID, and any conference-specific exceptions remain unverified. No content was cut to meet an assumed limit.
-2. **Font substitution:** The DOCX specifies Times New Roman. That font is unavailable in this environment, so the PDF contains embedded **Liberation Serif** (plus OpenSymbol for bullets). It is not an exact template-font match. Export the corrected DOCX using Word with Times New Roman available, or use PDF eXpress source conversion if the conference permits it. Recheck all pages after that conversion. Passing a PDF font-embedding check does not establish compliance with the template's font requirement.
+  
 3. **Original figure quality:** The supplied template calls for 8 pt Times New Roman figure labels and suggests 300 dpi graphics. The embedded labels use other fonts and some are smaller than 8 pt at final size. Effective resolutions are about 282 ppi for Fig. 1, 180 ppi for Fig. 2, 266 ppi for Fig. 3, 196 ppi for Fig. 4, and 179 ppi for Table I. Original plots/source graphics are needed to correct label typography and improve resolution reliably. No synthetic redrawing or upsampling was used. The classification report remains an image, not an editable table.
-4. **Author details:** Email/ORCID and explicit country fields are absent for Angelina Kaur Bawa, Antim Dev Mishra, and Varenya Visen. These were not invented. Confirm the missing details or a conference exception. The full corresponding-author block is retained; the conference may prescribe another placement.
+  
 5. **Pagination:** Large figures remain intact at readable sizes and begin at page tops. This leaves underfilled areas on some preceding pages, particularly pages 4–6. The page limit must be confirmed before deciding whether figures may be reformatted further or content shortened.
-6. **Deadline:** “24 September at 6:00 PM” does not identify a year or time zone. Please confirm whether this means **24 September 2026**, and specify the organizer's time zone.
 
 ## Research and bibliography issues requiring author decisions
 
 These were preserved rather than resolved by guessing. Section labels below refer to the revised paper.
 
-| Location | Issue requiring confirmation |
-|---|---|
-| IV-A, Fig. 1, VI-A | IV-A says best validation loss is **0.2667 at epoch 12** and best validation accuracy is **96.64% at epoch 7**. Fig. 1 labels best epochs **19** and **14**. VI-A reports **97.17% after 24 epochs**. Please identify the correct run and results. |
-| IV-A | The same section reports validation loss falling to **0.1656**, below the stated “best” loss of **0.2667**. The starting values in the prose also appear inconsistent with the plot. Training logs are needed to resolve this. |
-| II-A | The sentence beginning “For instance, a study by Rajpurkatransfer learning techniques…” is corrupted and includes “VGG16r et al.” Please supply the intended sentence. |
-| Fig. 3 and IV-C | Correct Normal predictions are labeled **Conf: 0.00** or **0.05**, while the prose calls these high-confidence predictions. Confirm whether this is the pneumonia probability rather than confidence in the predicted class. |
-| III-A, III-C, III-D | The text describes both an existing validation subset and a validation split from training data, and both undersampling and class weighting. Clarify the exact split, sampling order, and weighting used. |
-| Introduction and Discussion | Several citations appear mismatched to the claims based on their supplied titles. Examples: [14] is Grad-CAM but accompanies balancing methods; [18] is a class-imbalance study but accompanies explainability methods; revised [29]–[31] are WHO/UNICEF materials cited for augmentation results. Review the claim-to-source associations. They were not reassigned. |
-| V and VI | Claims about computational efficiency, improvements from balancing/augmentation, and specificity are not accompanied by corresponding comparative experiments, ablation results, or explicit specificity results. Confirm supporting evidence or authorize wording changes. |
-| References | Revised **[39]**, Zhang et al., “Understanding deep learning (still) requires rethinking generalization,” was original [20] and remains uncited. Confirm where it should be cited or authorize removal. |
-| References | The UNICEF entry, revised [31], lacks a year. Some web/institutional entries lack identifying URLs or access details. Full author lists behind “et al.” and publication metadata were not independently verified. Missing bibliographic facts were not invented. |
 
-The confusion-matrix counts **211, 23, 15, 219** sum to **468** cases and yield approximately **91.88% accuracy**, consistent with the reported rounded **92%** and the displayed classification report. This checks internal arithmetic only; it does not validate the experiment.
 
 Reference renumbering: original [1]–[19] are unchanged; original [21]–[37] become [20]–[36]; original [38] merges into [36]; original [39] becomes [37]; original [40] becomes [38]; original uncited [20] becomes [39].
 
